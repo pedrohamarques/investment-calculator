@@ -9,6 +9,7 @@ export default defineConfig({
             "@util": "/src/util",
             "@assets": "/src/assets",
             "@components": "/src/components",
+            "@typings": "/src/typings",
         },
     },
 });

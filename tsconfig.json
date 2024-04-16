@@ -25,7 +25,8 @@
         "paths": {
             "@util/*": ["./src/util/*"],
             "@assets/*": ["./src/assets/*"],
-            "@components/*": ["./src/components/*"]
+            "@components/*": ["./src/components/*"],
+            "@typings/*": ["./src/typings/*"]
         }
     },
     "include": ["src"],
