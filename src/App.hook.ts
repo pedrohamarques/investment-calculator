@@ -17,5 +17,7 @@ export function useApp() {
         }));
     }
 
-    return { userInput, handleChange };
+    const inputIsValid = userInput.duration >= 1;
+
+    return { userInput, handleChange, inputIsValid };
 }
