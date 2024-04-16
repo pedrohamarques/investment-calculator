@@ -2,10 +2,10 @@ import { UserInputDataProps } from "@typings/data";
 
 type UserInputProps = {
     data: UserInputDataProps;
-    handleChange: (key: string, newValue: string) => void;
+    onChange: (key: string, newValue: string) => void;
 };
 
-export function UserInput({ data, handleChange }: UserInputProps) {
+export function UserInput({ data, onChange }: UserInputProps) {
     return (
         <section id='user-input'>
             <div className='input-group'>
@@ -16,10 +16,7 @@ export function UserInput({ data, handleChange }: UserInputProps) {
                         required
                         value={data.initialInvestment}
                         onChange={event =>
-                            handleChange(
-                                "initialInvestment",
-                                event.target.value,
-                            )
+                            onChange("initialInvestment", event.target.value)
                         }
                     />
                 </p>
@@ -30,7 +27,7 @@ export function UserInput({ data, handleChange }: UserInputProps) {
                         required
                         value={data.annualInvestment}
                         onChange={event =>
-                            handleChange("annualInvestment", event.target.value)
+                            onChange("annualInvestment", event.target.value)
                         }
                     />
                 </p>
@@ -42,10 +39,7 @@ export function UserInput({ data, handleChange }: UserInputProps) {
                             required
                             value={data.expectedReturn}
                             onChange={event =>
-                                handleChange(
-                                    "expectedReturn",
-                                    event.target.value,
-                                )
+                                onChange("expectedReturn", event.target.value)
                             }
                         />
                     </p>
@@ -56,7 +50,7 @@ export function UserInput({ data, handleChange }: UserInputProps) {
                             required
                             value={data.duration}
                             onChange={event =>
-                                handleChange("duration", event.target.value)
+                                onChange("duration", event.target.value)
                             }
                         />
                     </p>
